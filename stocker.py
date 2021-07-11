@@ -1,27 +1,29 @@
 import requests
 from bs4 import BeautifulSoup as bs
-from time import sleep
 from datetime import datetime
+
+OUTPUT_FILE = 'README.md'
 
 icons = [9196, 128317, 9208, 128316, 9195]
 
 ms_list = {
-    'AAPL': 'APPLE-INC-4849',
-    'AMZN': 'AMAZON-COM-INC-12864605',
-    'DIS': 'WALT-DISNEY-COMPANY-THE-4842',
-    'FB': 'FACEBOOK-INC-10547141',
-    'FDX': 'FEDEX-CORPORATION-12585',
-    'GOOGL': 'ALPHABET-INC-24203373',
-    'MSFT': 'MICROSOFT-CORPORATION-4835',
-    'RBLX': 'ROBLOX-CORPORATION-117793644',
-    'TPVG': 'TRIPLEPOINT-VENTURE-GROWT-15933327',
-    'TSLA': 'TESLA-INC-6344549',
-    'U': 'UNITY-SOFTWARE-INC-112492634'
+    'AAPL': '-4849',
+    'AMZN': '-12864605',
+    'DIS': '-4842',
+    'FB': '-10547141',
+    'FDX': '-12585',
+    'GOOGL': '-24203373',
+    'MSFT': '-4835',
+    'RBLX': '-117793644',
+    'TPVG': '-15933327',
+    'TSLA': '-6344549',
+    'U': '-112492634',
 }
 
 table = {}
 
 for code, link in ms_list.items():
+    if len(link) < 1: continue
     href = 'https://m.marketscreener.com/quote/stock/' + link + '/'
     res = requests.get(href)
     html = bs(res.text, 'html.parser')
@@ -41,7 +43,6 @@ for code, link in ms_list.items():
     href = 'https://www.tipranks.com/stocks/{}/forecast'.format(code.lower())
     res = requests.get(href)
     html = bs(res.text, 'html.parser')
-    #sleep(1)
     consensus = html.select_one('div[data-sc=consensus]').select_one('span').text
     target_price = html.select_one('div[data-sc=priceTarget]').select_one('div[title]').text
 
@@ -54,9 +55,9 @@ for code, link in ms_list.items():
     table[code]['consensus_2'] = f'[{chr(icons[clevel])} {consensus}]({href})'
     table[code]['target_2'] = f'{target_price} ({target_p})'
 
-with open('result.md', 'w', encoding='utf-8') as f:
+with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     f.write('# Stocks\n')
-    f.write('Last Updated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + ' UTC\n\n')
+    f.write('Last Updated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\n\n')
 
     f.write('|Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|\n')
     f.write('|:--:|-|-|-|-|-|\n')
@@ -64,3 +65,5 @@ with open('result.md', 'w', encoding='utf-8') as f:
         t = table[code]
         s = [code, t["last_close"], t["consensus_1"], t["target_1"], t["consensus_2"], t["target_2"]]
         f.write('|{}|\n'.format('|'.join(map(str, s))))
+
+    f.write('\n\n*A from [MarketScreener](https://www.marketscreener.com), *B from [TipRanks](https://www.tipranks.com)\n')
