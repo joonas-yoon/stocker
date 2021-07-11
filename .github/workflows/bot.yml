@@ -22,7 +22,7 @@ jobs:
         pip install bs4
 
     - name: Run bot
-    - run: |
+      run: |
         python ./stocker.py
 
     - name: Commit report
