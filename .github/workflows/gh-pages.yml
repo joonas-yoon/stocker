@@ -10,13 +10,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Build GitHub Pages
+      - name: Get changes
         run: |
           git config --global user.name 'joonas-bot'
           git config --global user.email 'joonas-yoon@users.noreply.github.com'
           cp README.md _README.md
-          git checkout gh-pages
+
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+      - name: Build GitHub Pages
+        run: |
           mv _README.md index.md
           git add index.md
           git commit -m "update index.md"
