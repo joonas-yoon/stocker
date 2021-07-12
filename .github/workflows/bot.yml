@@ -2,8 +2,9 @@ name: Bot
 
 on:
   schedule:
-    # At 10:00 on every day-of-week from Monday through Friday
-    - cron: '0 10 * * 1-5'
+    # At 12:00 on every day-of-week from Monday through Friday
+    # but 16:00 in Wall st., NY
+    - cron: '0 12 * * 1-5'
 
 jobs:
   build:
