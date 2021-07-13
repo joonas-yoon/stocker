@@ -82,7 +82,7 @@
             "consensus_1": "[\u23f8 Hold](https://m.marketscreener.com/quote/stock/-6344549/)",
             "target_1": "$658.16 (-4.02%)",
             "consensus_2": "[\u23f8 Hold](https://www.tipranks.com/stocks/tsla/forecast)",
-            "target_2": "$611.95 (-10.76%)"
+            "target_2": "$611.95 (-11.18%)"
         },
         "U": {
             "last_close": "$106.19",
@@ -92,5 +92,5 @@
             "target_2": "$118.00 (+11.12%)"
         }
     },
-    "last_updated": "2021-07-13 13:28:34"
+    "last_updated": "2021-07-13 13:41:33"
 }

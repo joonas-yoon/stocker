@@ -1,5 +1,5 @@
 # Stocks
-Last Updated: 2021-07-13 13:28:34
+Last Updated: 2021-07-13 13:41:33
 
 |Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|
 |:--:|-|-|-|-|-|
@@ -14,7 +14,7 @@ Last Updated: 2021-07-13 13:28:34
 |MSFT|$277.32|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4835/)|$297.51 (+7.28%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/msft/forecast)|$297.88 (+7.41%)|
 |RBLX|$86.54|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-117793644/)|$91.17 (+5.35%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)|$89.33 (+3.22%)|
 |TPVG|$15.89|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-15933327/)|$15.79 (-0.66%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/tpvg/forecast)|$16.00 (+0.69%)|
-|TSLA|$685.70|[⏸ Hold](https://m.marketscreener.com/quote/stock/-6344549/)|$658.16 (-4.02%)|[⏸ Hold](https://www.tipranks.com/stocks/tsla/forecast)|$611.95 (-10.76%)|
+|TSLA|$685.70|[⏸ Hold](https://m.marketscreener.com/quote/stock/-6344549/)|$658.16 (-4.02%)|[⏸ Hold](https://www.tipranks.com/stocks/tsla/forecast)|$611.95 (-11.18%)|
 |U|$106.19|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-112492634/)|$123.08 (+15.9%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/u/forecast)|$118.00 (+11.12%)|
 
 
