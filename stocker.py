@@ -60,6 +60,8 @@ for code, link in ms_list.items():
 with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     f.write('# Stocks\n')
     f.write('Last Updated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\n\n')
+    
+    print(table)
 
     f.write('|Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|\n')
     f.write('|:--:|-|-|-|-|-|\n')
