@@ -18,6 +18,6 @@ jobs:
           git config --global user.email 'joonas-yoon@users.noreply.github.com'
           wget https://raw.githubusercontent.com/joonas-yoon/stocker/main/README.md
           mv README.md index.md
-          git add index.md
-          git commit -m "update index.md"
-          git push
+          git add -N index.md
+          git diff index.md > git.diff
+          [ -s git.diff ] && git add index.md && git commit -m "update index.md" && git push || echo "Skip commit"
