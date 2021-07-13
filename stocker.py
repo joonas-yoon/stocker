@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup as bs
 from datetime import datetime
 
 OUTPUT_FILE = 'README.md'
+OUTPUT_JSON_FILE = 'data.json'
 
 icons = [9196, 128317, 9208, 128316, 9195]
 
@@ -57,11 +58,13 @@ for code, link in ms_list.items():
     table[code]['consensus_2'] = f'[{chr(icons[clevel])} {consensus}]({href})'
     table[code]['target_2'] = f'{target_price} ({target_p})'
 
+with open(OUTPUT_JSON_FILE, 'w', encoding='utf-8') as f:
+    print(table)
+    json.dump(table, f)
+    
 with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     f.write('# Stocks\n')
     f.write('Last Updated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\n\n')
-    
-    print(table)
 
     f.write('|Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|\n')
     f.write('|:--:|-|-|-|-|-|\n')
