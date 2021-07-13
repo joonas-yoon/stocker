@@ -67,7 +67,7 @@ with open(OUTPUT_JSON_FILE, 'w', encoding='utf-8') as f:
         'table': table,
         'last_updated': updated_time.strftime('%Y-%m-%d %H:%M:%S')
     }
-    json.dump(outdata, f)
+    json.dump(outdata, f, indent=4)
     
 with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     f.write('# Stocks\n')
