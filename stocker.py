@@ -26,6 +26,7 @@ ms_list = {
 
 table = {}
 
+# consensus_1, target_1 for A
 for code, link in ms_list.items():
     if len(link) < 1: continue
     href = 'https://m.marketscreener.com/quote/stock/' + link + '/'
@@ -41,8 +42,9 @@ for code, link in ms_list.items():
     table[code] = {}
     table[code]['last_close'] = f'${last_close[:-1]}'
     table[code]['consensus_1'] = '[{} {}]({})'.format(chr(icons[clevel]), consensus.title(), href)
-    table[code]['target_1'] = f'${target_price[:-2]} ({target_p})'
+    table[code]['target_1'] = f'${target_price[:-1]} ({target_p})'
 
+# consensus_2, target_2 for B
 for code, link in ms_list.items():
     href = 'https://www.tipranks.com/stocks/{}/forecast'.format(code.lower())
     res = requests.get(href)
