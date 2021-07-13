@@ -34,7 +34,7 @@ for code, link in ms_list.items():
     rows = html.select('table.Bord')[-1].find_all('tr')
     cols = [r.find_all('td')[1].text.strip() for r in rows]
     consensus, analysts, last_close, target_price, target_p = cols
-    last_close, target_price, target_p = map(lambda s: s.replace(' ', '').replace(',', '.'), [last_close, target_price, target_p])
+    last_close, target_price, target_p = map(lambda s: s.replace('\u00a0', '').replace(' ', '').replace(',', '.'), [last_close, target_price, target_p])
     if target_p[0] != '-': target_p = '+' + target_p
     clevel = "SUHOB".index(consensus[0].upper())
     
@@ -53,6 +53,7 @@ for code, link in ms_list.items():
     i = target_price.index('(')-1
     j = target_price.index('%')+1
     target_price, target_p = target_price[:i], target_price[i:j]
+    target_price = target_price.replace(',', '') # 1,234 to 1234
     target_p = target_p.replace('▲(', '+').replace('▼(', '')
     clevel = ["Strong Sell", "Moderate Sell", "Hold", "Moderate Buy", "Strong Buy"].index(consensus)
     
