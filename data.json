@@ -67,15 +67,15 @@
             "last_close": "$86.54",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-117793644/)",
             "target_1": "$91.17 (+5.35%)",
-            "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/rblx/forecast)",
-            "target_2": "$92.20 (+6.54%)"
+            "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)",
+            "target_2": "$89.33 (+3.22%)"
         },
         "TPVG": {
             "last_close": "$15.89",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-15933327/)",
             "target_1": "$15.79 (-0.66%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/tpvg/forecast)",
-            "target_2": "$16.00 (+2.24%)"
+            "target_2": "$16.00 (+0.69%)"
         },
         "TSLA": {
             "last_close": "$685.70",
@@ -92,5 +92,5 @@
             "target_2": "$118.00 (+11.12%)"
         }
     },
-    "last_updated": "2021-07-13 10:00:47"
+    "last_updated": "2021-07-13 13:28:34"
 }
