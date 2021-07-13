@@ -26,7 +26,7 @@
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-4842/)",
             "target_1": "$206.01 (+11.7%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/dis/forecast)",
-            "target_2": "$211.47 (+14.69%)"
+            "target_2": "$211.47 (+16.03%)"
         },
         "FB": {
             "last_close": "$353.16",
@@ -68,7 +68,7 @@
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-117793644/)",
             "target_1": "$91.17 (+5.35%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)",
-            "target_2": "$89.33 (+3.22%)"
+            "target_2": "$89.33 (+6.04%)"
         },
         "TPVG": {
             "last_close": "$15.89",
@@ -89,8 +89,8 @@
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-112492634/)",
             "target_1": "$123.08 (+15.9%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/u/forecast)",
-            "target_2": "$118.00 (+11.12%)"
+            "target_2": "$118.00 (+11.49%)"
         }
     },
-    "last_updated": "2021-07-13 13:41:33"
+    "last_updated": "2021-07-13 16:30:38"
 }
