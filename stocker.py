@@ -64,7 +64,7 @@ updated_time = datetime.now()
 
 with open(OUTPUT_JSON_FILE, 'w', encoding='utf-8') as f:
     outdata = {
-        '': table,
+        'table': table,
         'last_updated': updated_time.strftime('%Y-%m-%d %H:%M:%S')
     }
     json.dump(outdata, f)
