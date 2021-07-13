@@ -1,3 +1,4 @@
+import json
 import requests
 from bs4 import BeautifulSoup as bs
 from datetime import datetime
@@ -58,13 +59,19 @@ for code, link in ms_list.items():
     table[code]['consensus_2'] = f'[{chr(icons[clevel])} {consensus}]({href})'
     table[code]['target_2'] = f'{target_price} ({target_p})'
 
+# finish
+updated_time = datetime.now()
+
 with open(OUTPUT_JSON_FILE, 'w', encoding='utf-8') as f:
-    print(table)
-    json.dump(table, f)
+    outdata = {
+        '': table,
+        'last_updated': updated_time.strftime('%Y-%m-%d %H:%M:%S')
+    }
+    json.dump(outdata, f)
     
 with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     f.write('# Stocks\n')
-    f.write('Last Updated: ' + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\n\n')
+    f.write('Last Updated: ' + updated_time.strftime('%Y-%m-%d %H:%M:%S') + '\n\n')
 
     f.write('|Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|\n')
     f.write('|:--:|-|-|-|-|-|\n')
