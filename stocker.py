@@ -8,11 +8,13 @@ icons = [9196, 128317, 9208, 128316, 9195]
 
 ms_list = {
     'AAPL': '-4849',
+    'AMD': '-19475876',
     'AMZN': '-12864605',
     'DIS': '-4842',
     'FB': '-10547141',
     'FDX': '-12585',
     'GOOGL': '-24203373',
+    'INTC': '-4829',
     'MSFT': '-4835',
     'RBLX': '-117793644',
     'TPVG': '-15933327',
@@ -61,7 +63,7 @@ with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
 
     f.write('|Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|\n')
     f.write('|:--:|-|-|-|-|-|\n')
-    for code in ms_list:
+    for code in sorted(ms_list):
         t = table[code]
         s = [code, t["last_close"], t["consensus_1"], t["target_1"], t["consensus_2"], t["target_2"]]
         f.write('|{}|\n'.format('|'.join(map(str, s))))
