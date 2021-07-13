@@ -13,7 +13,8 @@ body {
                 sans-serif;
 }
 
-.card .list-group-item a {
+.card .list-group-item a,
+.table tr td a {
     color: inherit;
     text-decoration: none;
 }

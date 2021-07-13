@@ -23,18 +23,27 @@ function appendClass(node, cls) {
 
 function createTableRow(name, data) {
   var form = document.getElementById("template-table-row").cloneNode(true).content;
-  var rows = form.querySelectorAll("td");
-  rows[0].innerText = name;
-  rows[1].innerText = data["last_close"];
-  rows[2].innerHTML = markdownLinkToTag(data["consensus_1"]);
-  rows[3].innerText = data["target_1"];
-  rows[4].innerHTML = markdownLinkToTag(data["consensus_2"]);
-  rows[5].innerText = data["target_2"];
+  var row = form.querySelector("tr");
+  var color = '';
+  var p1 = isPositive(data["target_1"]), p2 = isPositive(data["target_2"]);
+  if (p1 && p2) color = 'text-white bg-success';
+  else if (!p1 && !p2) color = 'text-white bg-danger';
+  else color = 'text-white bg-dark';
+  row.setAttribute('data-code', name);
+  row.setAttribute('class', color);
+  var cols = form.querySelectorAll("td");
+  cols[0].innerText = name;
+  cols[1].innerText = data["last_close"];
+  cols[2].innerHTML = markdownLinkToTag(data["consensus_1"]);
+  cols[3].innerText = data["target_1"];
+  cols[4].innerHTML = markdownLinkToTag(data["consensus_2"]);
+  cols[5].innerText = data["target_2"];
   return form;
 }
 
 function createCard(name, data) {
   var form = document.getElementById("template-card").cloneNode(true).content;
+  form.querySelector(".card").setAttribute('data-code', name);
   form.querySelector(".card-title").innerText = name;
   form.querySelector(".card-subtitle").innerText = data["last_close"];
   form.querySelector(".consensus_1").innerHTML = markdownLinkToTag(data["consensus_1"]);
@@ -65,6 +74,35 @@ function onError(error) {
   console.error(error);
 }
 
+function showOnlyPattern(el, patterns, propDislay, propHide) {
+  var code = el.getAttribute('data-code');
+  var matched = patterns.length === 0 || patterns.some(function(p){
+    return p.length && code.indexOf(p) !== -1;
+  });
+  el.style.display = matched ? propDislay : propHide;
+}
+
+function filter(text) {
+  text = text.replaceAll(' ', '').toUpperCase() || '';
+  var patterns = text.split(',').filter(function(s){ return s.replaceAll(' ', '').length; })
+  var table = document.getElementById("table");
+  table.querySelectorAll("tr[data-code]").forEach(function(el){
+    showOnlyPattern(el, patterns, 'table-row', 'none');
+  });
+  var cards = document.getElementById("cards");
+  cards.querySelectorAll(".card[data-code]").forEach(function(el){
+    showOnlyPattern(el, patterns, 'block', 'none');
+  });
+}
+
+function addSearchEventListener() {
+  var form = document.getElementById("search-input");
+  form.addEventListener("input", function(e) {
+    filter(e.target.value);
+  });
+}
+
 window.onload = function() {
   loadJSON('data.json', onSuccess, onError);
+  addSearchEventListener();
 };
