@@ -1,9 +1,9 @@
 {
     "table": {
         "AAPL": {
-            "last_close": "$144.50",
+            "last_close": "$145.64",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-4849/)",
-            "target_1": "$156.01 (+7.97%)",
+            "target_1": "$156.01 (+7.12%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/aapl/forecast)",
             "target_2": "$158.27 (+9.53%)"
         },
@@ -15,23 +15,23 @@
             "target_2": "$106.86 (+17.67%)"
         },
         "AMZN": {
-            "last_close": "$3718.55",
+            "last_close": "$3677.36",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-12864605/)",
-            "target_1": "$4245.18 (+14.2%)",
+            "target_1": "$4245.18 (+15.4%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/amzn/forecast)",
             "target_2": "$4299.35 (+15.62%)"
         },
         "DIS": {
-            "last_close": "$184.38",
+            "last_close": "$183.65",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-4842/)",
-            "target_1": "$206.01 (+11.7%)",
+            "target_1": "$206.01 (+12.2%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/dis/forecast)",
             "target_2": "$211.47 (+16.03%)"
         },
         "FB": {
-            "last_close": "$353.16",
+            "last_close": "$352.09",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-10547141/)",
-            "target_1": "$386.28 (+9.38%)",
+            "target_1": "$386.28 (+9.71%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/fb/forecast)",
             "target_2": "$390.47 (+10.56%)"
         },
@@ -50,16 +50,16 @@
             "target_2": "$2809.00 (+10.61%)"
         },
         "INTC": {
-            "last_close": "$56.73",
+            "last_close": "$56.87",
             "consensus_1": "[\u23f8 Hold](https://m.marketscreener.com/quote/stock/-4829/)",
-            "target_1": "$65.18 (+14.9%)",
+            "target_1": "$65.18 (+14.6%)",
             "consensus_2": "[\u23f8 Hold](https://www.tipranks.com/stocks/intc/forecast)",
             "target_2": "$62.81 (+10.72%)"
         },
         "MSFT": {
-            "last_close": "$277.32",
+            "last_close": "$280.98",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4835/)",
-            "target_1": "$297.51 (+7.28%)",
+            "target_1": "$297.51 (+5.88%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/msft/forecast)",
             "target_2": "$297.88 (+5.56%)"
         },
@@ -68,7 +68,7 @@
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-117793644/)",
             "target_1": "$88.86 (+2.68%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)",
-            "target_2": "$89.33 (+5.93%)"
+            "target_2": "$89.33 (+6.32%)"
         },
         "TPVG": {
             "last_close": "$15.89",
@@ -78,9 +78,9 @@
             "target_2": "$16.00 (+0.69%)"
         },
         "TSLA": {
-            "last_close": "$685.70",
+            "last_close": "$668.54",
             "consensus_1": "[\u23f8 Hold](https://m.marketscreener.com/quote/stock/-6344549/)",
-            "target_1": "$658.16 (-4.02%)",
+            "target_1": "$658.16 (-1.55%)",
             "consensus_2": "[\u23f8 Hold](https://www.tipranks.com/stocks/tsla/forecast)",
             "target_2": "$611.95 (-8.94%)"
         },
@@ -92,5 +92,5 @@
             "target_2": "$118.00 (+11.49%)"
         }
     },
-    "last_updated": "2021-07-13 23:13:18"
+    "last_updated": "2021-07-14 03:45:20"
 }
