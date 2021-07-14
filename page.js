@@ -3,7 +3,13 @@ function loadJSON(path, success, error) {
   xhr.open("GET", path, true);
   xhr.responseType = 'json';
   xhr.onload = function(e) {
-    if (success) success(this.response);
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        if (success) success(this.response);
+      } else {
+        if (error) error(this.response);
+      }
+    }
   };
   xhr.onerror = error;
   xhr.send();
@@ -72,6 +78,10 @@ function onSuccess(json) {
 
 function onError(error) {
   console.error(error);
+  // try again with local file
+  loadJSON('data.json', onSuccess, function(e){
+    window.alert('Failed to load');
+  });
 }
 
 function showOnlyPattern(el, patterns, propDislay, propHide) {
@@ -83,8 +93,8 @@ function showOnlyPattern(el, patterns, propDislay, propHide) {
 }
 
 function filter(text) {
-  text = text.replaceAll(' ', '').toUpperCase() || '';
-  var patterns = text.split(',').filter(function(s){ return s.replaceAll(' ', '').length; })
+  text = text.replace(/' '/gi, '').toUpperCase() || '';
+  var patterns = text.split(',').filter(function(s){ return s.length; })
   var table = document.getElementById("table");
   table.querySelectorAll("tr[data-code]").forEach(function(el){
     showOnlyPattern(el, patterns, 'table-row', 'none');
@@ -103,6 +113,6 @@ function addSearchEventListener() {
 }
 
 window.onload = function() {
-  loadJSON('data.json', onSuccess, onError);
+  loadJSON('https://raw.githubusercontent.com/joonas-yoon/stocker/main/data.json', onSuccess, onError);
   addSearchEventListener();
 };
