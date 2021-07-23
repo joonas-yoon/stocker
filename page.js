@@ -19,8 +19,12 @@ function markdownLinkToTag(text) {
   return text.replace(/(.+)?\[(.+)\]\((.+)\)(.+)?/, '$1<a href="$3">$2</a>$4');
 }
 
-function isPositive(tp) {
-  return tp.indexOf("-") === -1;
+function consensusLevel(cons) {
+  if (cons.indexOf("Outperform") !== -1 || cons.indexOf("Moderate Buy") !== -1) return 1;
+  if (cons.indexOf("Underperform") !== -1 || cons.indexOf("Moderate Sell") !== -1) return -1;
+  if (cons.indexOf("Buy") !== -1 || cons.indexOf("Strong Buy") !== -1) return 2;
+  if (cons.indexOf("Sell") !== -1 || cons.indexOf("Strong Sell") !== -1) return -2;
+  return 0;
 }
 
 function appendClass(node, cls) {
@@ -31,9 +35,9 @@ function createTableRow(name, data) {
   var form = document.getElementById("template-table-row").cloneNode(true).content;
   var row = form.querySelector("tr");
   var color = '';
-  var p1 = isPositive(data["target_1"]), p2 = isPositive(data["target_2"]);
-  if (p1 && p2) color = 'text-white bg-success';
-  else if (!p1 && !p2) color = 'text-white bg-danger';
+  var c1 = consensusLevel(data["consensus_1"]), c2 = consensusLevel(data["consensus_2"]);
+  if (c1 > 0 && c2 > 0) color = 'text-white bg-success';
+  else if (c1 < 0 && c2 < 0) color = 'text-white bg-danger';
   else color = 'text-white bg-dark';
   row.setAttribute('data-code', name);
   row.setAttribute('class', color);
@@ -57,9 +61,9 @@ function createCard(name, data) {
   form.querySelector(".consensus_2").innerHTML = markdownLinkToTag(data["consensus_2"]);
   form.querySelector(".target_2").innerText = data["target_2"];
   var li = form.querySelectorAll("li");
-  var p1 = isPositive(data["target_1"]), p2 = isPositive(data["target_2"]);
-  appendClass(li[0], 'text-white ' + (p1 ? 'bg-success' : 'bg-danger'));
-  appendClass(li[1], 'text-white ' + (p2 ? 'bg-success' : 'bg-danger'));
+  var c1 = consensusLevel(data["consensus_1"]), c2 = consensusLevel(data["consensus_2"]);
+  appendClass(li[0], 'text-white ' + (c1 > 0 ? 'bg-success' : (c1 < 0 ? 'bg-danger' : 'bg-dark')));
+  appendClass(li[1], 'text-white ' + (c2 > 0 ? 'bg-success' : (c2 < 0 ? 'bg-danger' : 'bg-dark')));
   return form;
 }
 
