@@ -7,8 +7,13 @@ on:
   schedule:
     # At 23:00 on every day-of-week from Monday through Friday
     # but 19:00 in Wall st., NY
-    # - cron: '0 23 * * 1-5'
-    - cron: '0 23 1,15 * 1'
+    - cron: '0 23 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      updateNow:
+        description: 'Update'
+        required: true
+        default: 'Run forced'
 
 jobs:
   build:
