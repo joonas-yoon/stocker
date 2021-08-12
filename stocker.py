@@ -32,7 +32,7 @@ for code, link in ms_list.items():
     href = 'https://m.marketscreener.com/quote/stock/' + link + '/'
     res = requests.get(href)
     html = bs(res.text, 'html.parser')
-    rows = html.select('table.Bord')[-1].find_all('tr')
+    rows = html.select('table.Bord')[-1].find_all('tr')[1:]
     cols = [r.find_all('td')[1].text.strip() for r in rows]
     consensus, analysts, last_close, target_price, target_p = cols
     last_close, target_price, target_p = map(lambda s: s.replace('\u00a0', '').replace(' ', '').replace(',', '.'), [last_close, target_price, target_p])
