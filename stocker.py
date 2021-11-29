@@ -1,10 +1,13 @@
+import os
 import json
 import requests
 from bs4 import BeautifulSoup as bs
 from datetime import datetime
+from time import mktime
 
 OUTPUT_FILE = 'README.md'
 OUTPUT_JSON_FILE = 'data.json'
+OUTPUT_CHART_JSON = 'chart.json'
 
 icons = [9196, 128317, 9208, 128316, 9195]
 
@@ -25,6 +28,7 @@ ms_list = {
 }
 
 table = {}
+raw_numbers = {}
 
 # consensus_1, target_1 for A
 for code, link in ms_list.items():
@@ -44,6 +48,10 @@ for code, link in ms_list.items():
     table[code]['consensus_1'] = '[{} {}]({})'.format(chr(icons[clevel]), consensus.title(), href)
     table[code]['target_1'] = f'${target_price[:-1]} ({target_p})'
 
+    raw_numbers[code] = {}
+    raw_numbers[code]['consensus_1'] = clevel
+    raw_numbers[code]['target_1'] = float(target_price[:-1].replace('$', ''))
+
 # consensus_2, target_2 for B
 for code, link in ms_list.items():
     href = 'https://www.tipranks.com/stocks/{}/forecast'.format(code.lower())
@@ -62,16 +70,51 @@ for code, link in ms_list.items():
     table[code]['consensus_2'] = f'[{chr(icons[clevel])} {consensus}]({href})'
     table[code]['target_2'] = f'{target_price} ({target_p})'
 
+    raw_numbers[code]['consensus_2'] = clevel
+    raw_numbers[code]['target_2'] = float(target_price.replace('$', ''))
+
 # finish
 updated_time = datetime.now()
 
+# chart: create file if it doesn't exist
+if not os.path.exists(OUTPUT_CHART_JSON):
+    with open(OUTPUT_CHART_JSON, 'w+') as f:
+      json.dump({}, f)
+
+# chart: read and update
+with open(OUTPUT_CHART_JSON, 'r', encoding='utf-8') as f:
+    # read as json
+    try:
+      chart_json = json.load(f)
+    except:
+      chart_json = {}
+
+    # init
+    if not 'history' in chart_json:
+      chart_json['history'] = []
+
+    # update
+    today = {
+      'list': raw_numbers,
+      'date': updated_time.strftime('%Y-%m-%d'),
+      'timestamp': int(mktime(updated_time.timetuple()))
+    }
+    chart_json['history'].append(today)
+
+# chart: write
+with open(OUTPUT_CHART_JSON, 'w', encoding='utf-8') as f:
+    print(chart_json)
+    json.dump(chart_json, f)
+
+# table: read as json
 with open(OUTPUT_JSON_FILE, 'w', encoding='utf-8') as f:
     outdata = {
         'table': table,
         'last_updated': updated_time.strftime('%Y-%m-%d %H:%M:%S')
     }
     json.dump(outdata, f, indent=4)
-    
+
+# table: write
 with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     f.write('# Stocks\n')
     f.write('Last Updated: ' + updated_time.strftime('%Y-%m-%d %H:%M:%S') + '\n\n')
