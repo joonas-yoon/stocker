@@ -1,3 +1,5 @@
+let chartData;
+
 function loadJSON(path, success, error) {
   var xhr = new XMLHttpRequest();
   xhr.open("GET", path, true);
@@ -73,11 +75,21 @@ function onSuccess(json) {
   var cards = document.getElementById("cards");
   var table = json["table"];
   Object.keys(table).forEach(function(name, i){
-    tbody.appendChild(createTableRow(name, table[name]));
-    cards.appendChild(createCard(name, table[name]));
+    const trow = createTableRow(name, table[name]);
+    const card = createCard(name, table[name]);
+    tbody.appendChild(trow);
+    cards.appendChild(card);
   });
   var last_updated = json["last_updated"];
   document.getElementById("last_updated").innerText = last_updated || 'unknown';
+  // events
+  (new Array().concat(
+    ...document.querySelectorAll('div[data-code]'),
+    ...document.querySelectorAll('tr[data-code]')
+  )).forEach(node => {
+    const code = node.getAttribute('data-code');
+    node.addEventListener('mouseover', () => showChart(code));
+  });
 }
 
 function onError(error) {
@@ -116,7 +128,62 @@ function addSearchEventListener() {
   });
 }
 
+function showChart(code) {
+  google.charts.load('current', {
+    callback: drawChart,
+    packages: ['corechart']
+  });
+  function drawChart() {
+    const rows = [
+      ['Date', 'Low', 'Open', 'High', 'Close', 'Target 1', 'Target 2'],
+    ];
+    for (const row of chartData.history) {
+      const info = row.list[code];
+      if (!info) continue;
+      rows.push([
+        new Date(row['date']).toISOString().split('T')[0],
+        info.low || 0,
+        info.openPrice || 0,
+        info.high || 0,
+        info.closePrice || 0,
+        info.target_1,
+        info.target_2,
+      ]);
+    }
+    const data = google.visualization.arrayToDataTable(rows);
+    const options = {
+      legend: 'AAPL',
+      seriesType: "candlesticks",
+      series: {
+        1: {
+          type: 'line'
+        },
+        2: {
+          type: 'line'
+        }
+      },
+      vAxes: [
+        {
+          title: 'Quotes',
+        }
+      ],
+    };
+    const chart = new google.visualization.ComboChart(document.getElementById('chart'));
+    chart.draw(data, options);
+  }
+}
+
 window.onload = function() {
+  // fetch chart data
+  loadJSON(
+    'https://raw.githubusercontent.com/joonas-yoon/stocker/main/chart.min.json',
+    result => { chartData = result; },
+    function (error) {
+      console.error(error);
+      window.alert('Failed to load chart');
+    }
+  );
+  // ui
   loadJSON('https://raw.githubusercontent.com/joonas-yoon/stocker/main/data.json', onSuccess, onError);
   addSearchEventListener();
 };

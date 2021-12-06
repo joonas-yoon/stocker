@@ -86,6 +86,16 @@ for code, link in ms_list.items():
     print(html)
   sleep((randint(0, 2000) + 10000) / 1000)
 
+# Quotes
+quotes_href = 'https://market.tipranks.com/api/details/GetRealTimeQuotes?tickers={}'.format('%2C'.join(ms_list.keys()))
+quotes = requests.get(quotes_href).json()
+for q in quotes:
+  code = q['ticker']
+  raw_numbers[code]['low'] = q['low']
+  raw_numbers[code]['high'] = q['high']
+  raw_numbers[code]['openPrice'] = q['openPrice']
+  raw_numbers[code]['closePrice'] = q['price']
+
 # finish
 updated_time = datetime.now()
 
@@ -115,13 +125,13 @@ with open(OUTPUT_CHART_JSON, 'r', encoding='utf-8') as f:
       has_new = False
 
   # update
-  if has_new:
-    today = {
-      'list': raw_numbers,
-      'date': today_str,
-      'timestamp': int(mktime(updated_time.timetuple()))
-    }
-    chart_json['history'].append(today)
+  # if has_new:
+  today = {
+    'list': raw_numbers,
+    'date': today_str,
+    'timestamp': int(mktime(updated_time.timetuple()))
+  }
+  chart_json['history'].append(today)
 
 # chart: write
 with open(OUTPUT_CHART_JSON, 'w', encoding='utf-8') as f:
