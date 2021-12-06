@@ -59,7 +59,9 @@
         "MSFT": {
             "last_close": "$323.01",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4835/)",
-            "target_1": "$365.62 (+13.2%)"
+            "target_1": "$365.62 (+13.2%)",
+            "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/msft/forecast)",
+            "target_2": "$368.23 (+14.00%)"
         },
         "RBLX": {
             "last_close": "$113.79",
@@ -90,5 +92,5 @@
             "target_2": "$171.00 (+16.42%)"
         }
     },
-    "last_updated": "2021-12-06 11:25:52"
+    "last_updated": "2021-12-06 02:40:22"
 }

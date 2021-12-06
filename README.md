@@ -1,5 +1,5 @@
 # Stocks
-Last Updated: 2021-12-06 11:25:52
+Last Updated: 2021-12-06 02:40:22
 
 |Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|
 |:--:|-|-|-|-|-|
@@ -11,7 +11,7 @@ Last Updated: 2021-12-06 11:25:52
 |FDX|$240.84|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12585/)|$300.00 (+24.6%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/fdx/forecast)|$305.60 (+26.89%)|
 |GOOGL|$2840.03|[⏫ Buy](https://m.marketscreener.com/quote/stock/-24203373/)|$3351.59 (+18.0%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/googl/forecast)|$3356.96 (+18.20%)|
 |INTC|$49.25|[⏸ Hold](https://m.marketscreener.com/quote/stock/-4829/)|$55.33 (+12.3%)|[⏸ Hold](https://www.tipranks.com/stocks/intc/forecast)|$53.90 (+9.44%)|
-|MSFT|$323.01|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4835/)|$365.62 (+13.2%)|❌|❌|
+|MSFT|$323.01|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4835/)|$365.62 (+13.2%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/msft/forecast)|$368.23 (+14.00%)|
 |RBLX|$113.79|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-117793644/)|$114.10 (+0.27%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)|$114.78 (+0.87%)|
 |TPVG|$17.32|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-15933327/)|$17.86 (+3.10%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/tpvg/forecast)|$18.13 (+4.68%)|
 |TSLA|$1014.97|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-6344549/)|$857.00 (-15.6%)|[⏸ Hold](https://www.tipranks.com/stocks/tsla/forecast)|$938.52 (-7.53%)|
