@@ -13,6 +13,7 @@ def get_or_blank(d, key, blank):
 OUTPUT_FILE = 'README.md'
 OUTPUT_JSON_FILE = 'data.json'
 OUTPUT_CHART_JSON = 'chart.json'
+OUTPUT_CHART_MIN_JSON = 'chart.min.json'
 
 icons = [9196, 128317, 9208, 128316, 9195]
 
@@ -126,6 +127,9 @@ with open(OUTPUT_CHART_JSON, 'r', encoding='utf-8') as f:
 with open(OUTPUT_CHART_JSON, 'w', encoding='utf-8') as f:
   print(chart_json)
   json.dump(chart_json, f, indent=2)
+
+with open(OUTPUT_CHART_MIN_JSON, 'w', encoding='utf-8') as f:
+  json.dump(chart_json, f)
 
 # table: read as json
 with open(OUTPUT_JSON_FILE, 'w', encoding='utf-8') as f:
