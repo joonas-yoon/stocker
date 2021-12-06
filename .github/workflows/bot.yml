@@ -1,9 +1,6 @@
 name: Bot
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     # At 23:00 on every day-of-week from Monday through Friday
     # but 19:00 in Wall st., NY
@@ -27,9 +24,8 @@ jobs:
         python-version: 3.9
 
     - name: Install python package
-      run: |        
-        pip install requests
-        pip install bs4
+      run: |
+        pip -r install requirements.txt
 
     - name: Run bot
       run: |
