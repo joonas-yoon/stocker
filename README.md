@@ -1,21 +1,21 @@
 # Stocks
-Last Updated: 2021-12-06 23:15:22
+Last Updated: 2021-12-07 23:14:47
 
 |Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|
 |:--:|-|-|-|-|-|
-|AAPL|$161.84|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4849/)|$168.53 (+4.14%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/aapl/forecast)|$169.96 (+2.18%)|
-|AMD|$144.01|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-19475876/)|$140.50 (-2.44%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/amd/forecast)|$141.95 (-1.43%)|
-|AMZN|$3389.79|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12864605/)|$4127.73 (+21.8%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/amzn/forecast)|$4116.94 (+20.12%)|
-|DIS|$146.22|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4842/)|$196.87 (+34.6%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/dis/forecast)|$204.05 (+39.55%)|
-|FB|$306.84|[⏫ Buy](https://m.marketscreener.com/quote/stock/-10547141/)|$403.89 (+31.6%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/fb/forecast)|$406.31 (+29.45%)|
-|FDX|$240.84|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12585/)|$300.00 (+24.6%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/fdx/forecast)|$304.65 (+24.70%)|
-|GOOGL|$2840.03|[⏫ Buy](https://m.marketscreener.com/quote/stock/-24203373/)|$3351.59 (+18.0%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/googl/forecast)|$3356.96 (+19.42%)|
-|INTC|$49.25|[⏸ Hold](https://m.marketscreener.com/quote/stock/-4829/)|$55.33 (+12.3%)|[⏸ Hold](https://www.tipranks.com/stocks/intc/forecast)|$53.90 (+9.44%)|
-|MSFT|$323.01|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4835/)|$365.63 (+13.2%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/msft/forecast)|$368.23 (+14.06%)|
-|RBLX|$113.79|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-117793644/)|$114.10 (+0.27%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)|$114.78 (+4.46%)|
-|TPVG|$17.32|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-15933327/)|$17.86 (+3.10%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/tpvg/forecast)|$18.13 (+5.84%)|
-|TSLA|$1014.97|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-6344549/)|$861.69 (-15.1%)|[⏸ Hold](https://www.tipranks.com/stocks/tsla/forecast)|$938.52 (-3.93%)|
-|U|$146.88|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-112492634/)|$166.92 (+13.6%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/u/forecast)|$171.00 (+19.81%)|
+|AAPL|$165.32|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4849/)|$169.41 (+2.48%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/aapl/forecast)|$169.28 (-1.11%)|
+|AMD|$139.06|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-19475876/)|$140.50 (+1.04%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/amd/forecast)|$141.95 (+2.08%)|
+|AMZN|$3427.37|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12864605/)|$4121.35 (+20.2%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/amzn/forecast)|$4120.83 (+20.23%)|
+|DIS|$150.37|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4842/)|$196.87 (+30.9%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/dis/forecast)|$204.05 (+35.45%)|
+|FB|$317.87|[⏫ Buy](https://m.marketscreener.com/quote/stock/-10547141/)|$403.89 (+27.1%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/fb/forecast)|$406.31 (+25.10%)|
+|FDX|$245.05|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12585/)|$300.00 (+22.4%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/fdx/forecast)|$304.65 (+24.32%)|
+|GOOGL|$2863.10|[⏫ Buy](https://m.marketscreener.com/quote/stock/-24203373/)|$3351.59 (+17.1%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/googl/forecast)|$3356.96 (+17.25%)|
+|INTC|$50.99|[⏸ Hold](https://m.marketscreener.com/quote/stock/-4829/)|$55.63 (+9.11%)|[⏸ Hold](https://www.tipranks.com/stocks/intc/forecast)|$53.80 (+2.72%)|
+|MSFT|$326.19|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4835/)|$365.63 (+12.1%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/msft/forecast)|$368.23 (+12.89%)|
+|RBLX|$113.25|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-117793644/)|$114.10 (+0.75%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)|$114.78 (-2.60%)|
+|TPVG|$17.32|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-15933327/)|$17.86 (+3.10%)|[⏫ Strong Buy](https://www.tipranks.com/stocks/tpvg/forecast)|$18.13 (+4.68%)|
+|TSLA|$1009.01|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-6344549/)|$870.28 (-13.7%)|[⏸ Hold](https://www.tipranks.com/stocks/tsla/forecast)|$936.86 (-10.92%)|
+|U|$147.57|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-112492634/)|$166.92 (+13.1%)|[🔼 Moderate Buy](https://www.tipranks.com/stocks/u/forecast)|$171.00 (+11.85%)|
 
 
 *A from [MarketScreener](https://www.marketscreener.com), *B from [TipRanks](https://www.tipranks.com)
