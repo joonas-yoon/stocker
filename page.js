@@ -135,7 +135,7 @@ function showChart(code) {
   });
   function drawChart() {
     const rows = [
-      ['Date', 'Low', 'Open', 'High', 'Close', 'Target 1', 'Target 2'],
+      ['Date', '', 'Open', 'High', 'Close', 'Target 1', 'Target 2'],
     ];
     for (const row of chartData.history) {
       const info = row.list[code];
@@ -152,7 +152,7 @@ function showChart(code) {
     }
     const data = google.visualization.arrayToDataTable(rows);
     const options = {
-      legend: 'AAPL',
+      title: code,
       seriesType: "candlesticks",
       series: {
         1: {
@@ -167,6 +167,10 @@ function showChart(code) {
           title: 'Quotes',
         }
       ],
+      curveType: 'function',
+      legend: {
+        position: 'bottom'
+      },
     };
     const chart = new google.visualization.ComboChart(document.getElementById('chart'));
     chart.draw(data, options);
@@ -176,12 +180,13 @@ function showChart(code) {
 window.onload = function() {
   // fetch chart data
   loadJSON(
-    'https://raw.githubusercontent.com/joonas-yoon/stocker/main/chart.min.json',
+    './chart.min.json',
     result => { chartData = result; },
-    function (error) {
-      console.error(error);
-      window.alert('Failed to load chart');
-    }
+    result => { chartData = result; },
+    // function (error) {
+    //   console.error(error);
+    //   window.alert('Failed to load chart');
+    // }
   );
   // ui
   loadJSON('https://raw.githubusercontent.com/joonas-yoon/stocker/main/data.json', onSuccess, onError);
