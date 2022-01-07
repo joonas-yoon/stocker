@@ -3263,6 +3263,142 @@
       },
       "date": "2022-01-06",
       "timestamp": 1641510910
+    },
+    {
+      "list": {
+        "AAPL": {
+          "consensus_1": 4,
+          "target_1": 175.14,
+          "consensus_2": 4,
+          "target_2": 175.28,
+          "low": 171.03,
+          "high": 174.14,
+          "openPrice": 172.89,
+          "closePrice": 172.17
+        },
+        "AMD": {
+          "consensus_1": 3,
+          "target_1": 140.72,
+          "consensus_2": 3,
+          "target_2": 143.15,
+          "low": 131.13,
+          "high": 137.44,
+          "openPrice": 136.28,
+          "closePrice": 132.0
+        },
+        "AMZN": {
+          "consensus_1": 4,
+          "target_1": 4131.6,
+          "consensus_2": 4,
+          "target_2": 4137.5,
+          "low": 3240.62,
+          "high": 3304.865,
+          "openPrice": 3276.78,
+          "closePrice": 3251.08
+        },
+        "DIS": {
+          "consensus_1": 4,
+          "target_1": 195.52,
+          "consensus_2": 3,
+          "target_2": 196.21,
+          "low": 156.29,
+          "high": 159.3,
+          "openPrice": 156.9,
+          "closePrice": 157.83
+        },
+        "FB": {
+          "consensus_1": 4,
+          "target_1": 403.21,
+          "consensus_2": 4,
+          "target_2": 409.02,
+          "low": 328.8801,
+          "high": 337.0,
+          "openPrice": 332.74,
+          "closePrice": 331.79
+        },
+        "FDX": {
+          "consensus_1": 4,
+          "target_1": 307.41,
+          "consensus_2": 4,
+          "target_2": 308.5,
+          "low": 262.04,
+          "high": 266.61,
+          "openPrice": 262.69,
+          "closePrice": 263.99
+        },
+        "GOOGL": {
+          "consensus_1": 4,
+          "target_1": 3367.79,
+          "consensus_2": 4,
+          "target_2": 3368.75,
+          "low": 2715.33,
+          "high": 2768.97,
+          "openPrice": 2762.91,
+          "closePrice": 2740.34
+        },
+        "INTC": {
+          "consensus_1": 2,
+          "target_1": 56.43,
+          "consensus_2": 2,
+          "target_2": 55.29,
+          "low": 53.15,
+          "high": 54.39,
+          "openPrice": 54.19,
+          "closePrice": 53.44
+        },
+        "MSFT": {
+          "consensus_1": 4,
+          "target_1": 374.9,
+          "consensus_2": 4,
+          "target_2": 371.36,
+          "low": 310.09,
+          "high": 316.5,
+          "openPrice": 314.15,
+          "closePrice": 314.04
+        },
+        "RBLX": {
+          "consensus_1": 3,
+          "target_1": 116.09,
+          "consensus_2": 3,
+          "target_2": 116.9,
+          "low": 82.58,
+          "high": 88.69,
+          "openPrice": 86.38,
+          "closePrice": 84.37
+        },
+        "TPVG": {
+          "consensus_1": 3,
+          "target_1": 17.86,
+          "consensus_2": 4,
+          "target_2": 18.13,
+          "low": 17.1327,
+          "high": 17.35,
+          "openPrice": 17.25,
+          "closePrice": 17.28
+        },
+        "TSLA": {
+          "consensus_1": 3,
+          "target_1": 935.91,
+          "consensus_2": 3,
+          "target_2": 1053.73,
+          "low": 1010.0,
+          "high": 1080.9299,
+          "openPrice": 1080.37,
+          "closePrice": 1026.96
+        },
+        "U": {
+          "consensus_1": 3,
+          "target_1": 182.89,
+          "consensus_2": 4,
+          "target_2": 180.25,
+          "low": 118.3,
+          "high": 126.39,
+          "openPrice": 120.11,
+          "closePrice": 120.38
+        }
+      },
+      "date": "2022-01-07",
+      "timestamp": 1641597317
     }
   ]
 }
