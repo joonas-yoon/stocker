@@ -18,10 +18,12 @@ function loadJSON(path, success, error) {
 }
 
 function markdownLinkToTag(text) {
+  text = text || '';
   return text.replace(/(.+)?\[(.+)\]\((.+)\)(.+)?/, '$1<a href="$3">$2</a>$4');
 }
 
 function consensusLevel(cons) {
+  cons = cons || [];
   if (cons.indexOf("Outperform") !== -1 || cons.indexOf("Moderate Buy") !== -1) return 1;
   if (cons.indexOf("Underperform") !== -1 || cons.indexOf("Moderate Sell") !== -1) return -1;
   if (cons.indexOf("Buy") !== -1 || cons.indexOf("Strong Buy") !== -1) return 2;
