@@ -1,96 +1,96 @@
 {
     "table": {
         "AAPL": {
-            "last_close": "$174.31",
+            "last_close": "$175.06",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4849/)",
-            "target_1": "$191.20 (+9.69%)",
+            "target_1": "$191.20 (+9.22%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/aapl/forecast)",
-            "target_2": "$193.36 (+10.93%)"
+            "target_2": "$193.36 (+8.36%)"
         },
         "AMD": {
             "last_close": "$110.53",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-19475876/)",
             "target_1": "$148.93 (+34.7%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/amd/forecast)",
-            "target_2": "$150.41 (+36.08%)"
+            "target_2": "$149.53 (+40.11%)"
         },
         "AMZN": {
-            "last_close": "$3271.20",
+            "last_close": "$3366.93",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-12864605/)",
-            "target_1": "$4100.06 (+25.3%)",
+            "target_1": "$4100.06 (+21.8%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/amzn/forecast)",
-            "target_2": "$4143.76 (+26.64%)"
+            "target_2": "$4143.76 (+26.29%)"
         },
         "DIS": {
-            "last_close": "$137.00",
+            "last_close": "$135.62",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4842/)",
-            "target_1": "$188.00 (+37.2%)",
+            "target_1": "$188.00 (+38.6%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/dis/forecast)",
-            "target_2": "$189.50 (+36.75%)"
+            "target_2": "$189.50 (+36.74%)"
         },
         "FB": {
             "last_close": "$233.89",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-10547141/)",
-            "target_1": "$327.79 (+40.1%)",
+            "target_1": "$328.21 (+40.3%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/fb/forecast)",
-            "target_2": "$325.10 (+39.23%)"
+            "target_2": "$325.60 (+39.21%)"
         },
         "FDX": {
-            "last_close": "$221.25",
+            "last_close": "$217.99",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-12585/)",
-            "target_1": "$290.85 (+31.5%)",
+            "target_1": "$290.85 (+33.4%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/fdx/forecast)",
-            "target_2": "$295.75 (+36.22%)"
+            "target_2": "$295.75 (+38.27%)"
         },
         "GOOGL": {
             "last_close": "$2859.43",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-24203373/)",
-            "target_1": "$3476.87 (+21.6%)",
+            "target_1": "$3476.25 (+21.6%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/googl/forecast)",
-            "target_2": "$3490.00 (+24.51%)"
+            "target_2": "$3490.00 (+22.05%)"
         },
         "INTC": {
-            "last_close": "$49.20",
+            "last_close": "$48.13",
             "consensus_1": "[\u23f8 Hold](https://m.marketscreener.com/quote/stock/-4829/)",
-            "target_1": "$54.17 (+10.1%)",
+            "target_1": "$54.17 (+12.5%)",
             "consensus_2": "[\u23f8 Hold](https://www.tipranks.com/stocks/intc/forecast)",
-            "target_2": "$52.85 (+8.19%)"
+            "target_2": "$52.85 (+8.23%)"
         },
         "MSFT": {
-            "last_close": "$309.42",
+            "last_close": "$314.97",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4835/)",
-            "target_1": "$374.06 (+20.9%)",
+            "target_1": "$374.06 (+18.8%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/msft/forecast)",
             "target_2": "$374.88 (+19.02%)"
         },
         "RBLX": {
-            "last_close": "$46.02",
+            "last_close": "$49.03",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-117793644/)",
-            "target_1": "$70.88 (+54.0%)",
+            "target_1": "$70.88 (+44.6%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/rblx/forecast)",
-            "target_2": "$69.38 (+37.52%)"
+            "target_2": "$69.38 (+38.70%)"
         },
         "TPVG": {
-            "last_close": "$17.88",
+            "last_close": "$17.27",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-15933327/)",
-            "target_1": "$17.96 (+0.47%)",
+            "target_1": "$17.96 (+4.02%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/tpvg/forecast)",
-            "target_2": "$18.38 (+5.63%)"
+            "target_2": "$18.38 (+5.21%)"
         },
         "TSLA": {
-            "last_close": "$1084.59",
+            "last_close": "$1091.26",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-6344549/)",
-            "target_1": "$957.89 (-11.7%)",
+            "target_1": "$960.70 (-12.0%)",
             "consensus_2": "[\ud83d\udd3c Moderate Buy](https://www.tipranks.com/stocks/tsla/forecast)",
-            "target_2": "$1006.57 (-11.11%)"
+            "target_2": "$1005.64 (-9.45%)"
         },
         "U": {
-            "last_close": "$98.92",
+            "last_close": "$108.64",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-112492634/)",
-            "target_1": "$155.53 (+57.2%)",
+            "target_1": "$155.53 (+43.2%)",
             "consensus_2": "[\u23eb Strong Buy](https://www.tipranks.com/stocks/u/forecast)",
-            "target_2": "$138.75 (+28.72%)"
+            "target_2": "$138.75 (+34.16%)"
         }
     },
-    "last_updated": "2022-04-04 23:16:15"
+    "last_updated": "2022-04-05 23:15:54"
 }
