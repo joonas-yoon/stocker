@@ -1,24 +1,24 @@
 {
     "table": {
         "AAPL": {
-            "last_close": "$140.36",
+            "last_close": "$140.52",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4849/)",
-            "target_1": "$189.07 (+34.7%)"
+            "target_1": "$188.36 (+34.0%)"
         },
         "AMD": {
-            "last_close": "$95.07",
+            "last_close": "$92.65",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-19475876/)",
-            "target_1": "$133.99 (+40.9%)"
+            "target_1": "$133.99 (+44.6%)"
         },
         "AMZN": {
-            "last_close": "$2151.14",
+            "last_close": "$2082.00",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-12864605/)",
-            "target_1": "$3660.91 (+70.2%)"
+            "target_1": "$3660.91 (+75.8%)"
         },
         "DIS": {
-            "last_close": "$105.83",
+            "last_close": "$101.59",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4842/)",
-            "target_1": "$160.36 (+51.5%)"
+            "target_1": "$160.36 (+57.9%)"
         },
         "FB": {
             "last_close": "$181.28",
@@ -26,29 +26,29 @@
             "target_1": "$287.32 (+58.5%)"
         },
         "FDX": {
-            "last_close": "$204.69",
+            "last_close": "$205.25",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-12585/)",
-            "target_1": "$288.86 (+41.1%)"
+            "target_1": "$288.86 (+40.7%)"
         },
         "GOOGL": {
-            "last_close": "$2229.76",
+            "last_close": "$2119.40",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-24203373/)",
-            "target_1": "$3255.87 (+46.0%)"
+            "target_1": "$3248.37 (+53.3%)"
         },
         "INTC": {
-            "last_close": "$42.00",
+            "last_close": "$42.20",
             "consensus_1": "[\u23f8 Hold](https://m.marketscreener.com/quote/stock/-4829/)",
-            "target_1": "$52.48 (+24.9%)"
+            "target_1": "$52.48 (+24.4%)"
         },
         "MSFT": {
-            "last_close": "$260.65",
+            "last_close": "$259.62",
             "consensus_1": "[\u23eb Buy](https://m.marketscreener.com/quote/stock/-4835/)",
-            "target_1": "$361.47 (+38.7%)"
+            "target_1": "$361.47 (+39.2%)"
         },
         "RBLX": {
-            "last_close": "$30.06",
+            "last_close": "$28.93",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-117793644/)",
-            "target_1": "$43.42 (+44.4%)"
+            "target_1": "$43.42 (+50.1%)"
         },
         "TPVG": {
             "last_close": "$14.00",
@@ -56,15 +56,15 @@
             "target_1": "$17.54 (+25.3%)"
         },
         "TSLA": {
-            "last_close": "$674.90",
+            "last_close": "$658.80",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-6344549/)",
-            "target_1": "$953.33 (+41.3%)"
+            "target_1": "$953.33 (+44.7%)"
         },
         "U": {
-            "last_close": "$41.03",
+            "last_close": "$35.22",
             "consensus_1": "[\ud83d\udd3c Outperform](https://m.marketscreener.com/quote/stock/-112492634/)",
-            "target_1": "$82.65 (+101%)"
+            "target_1": "$82.65 (+135%)"
         }
     },
-    "last_updated": "2022-05-24 23:16:50"
+    "last_updated": "2022-05-25 23:16:13"
 }
