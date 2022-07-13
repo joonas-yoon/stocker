@@ -1,21 +1,21 @@
 # Stocks
-Last Updated: 2022-07-12 23:15:49
+Last Updated: 2022-07-13 23:15:47
 
 |Code|Last close|Mean Consensus A|Target price(+) A|Mean Consensus B|Target price(+) B|
 |:--:|-|-|-|-|-|
-|AAPL|$145.86|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4849/)|$182.85 (+25.4%)|❌|❌|
-|AMD|$76.36|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-19475876/)|$125.50 (+64.4%)|❌|❌|
-|AMZN|$111.75|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12864605/)|$175.63 (+57.2%)|❌|❌|
-|DIS|$93.60|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4842/)|$147.21 (+57.3%)|❌|❌|
-|FB|$162.88|[⏫ Buy](https://m.marketscreener.com/quote/stock/-10547141/)|$274.38 (+68.5%)|❌|❌|
-|FDX|$222.98|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12585/)|$289.49 (+29.8%)|❌|❌|
-|GOOGL|$2280.41|[⏫ Buy](https://m.marketscreener.com/quote/stock/-24203373/)|$3142.65 (+37.8%)|❌|❌|
-|INTC|$37.21|[⏸ Hold](https://m.marketscreener.com/quote/stock/-4829/)|$49.72 (+33.6%)|❌|❌|
-|MSFT|$264.51|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4835/)|$352.90 (+33.4%)|❌|❌|
-|RBLX|$38.22|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-117793644/)|$40.84 (+6.86%)|❌|❌|
-|TPVG|$12.96|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-15933327/)|$16.68 (+28.7%)|❌|❌|
-|TSLA|$699.21|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-6344549/)|$904.18 (+29.3%)|❌|❌|
-|U|$39.76|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-112492634/)|$64.53 (+62.3%)|❌|❌|
+|AAPL|$145.86|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4849/)|$182.82 (+25.3%)|❌|❌|
+|AMD|$77.52|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-19475876/)|$124.91 (+61.1%)|❌|❌|
+|AMZN|$109.22|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12864605/)|$175.12 (+60.3%)|❌|❌|
+|DIS|$93.60|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4842/)|$146.71 (+56.7%)|❌|❌|
+|FB|$163.44|[⏫ Buy](https://m.marketscreener.com/quote/stock/-10547141/)|$273.87 (+67.6%)|❌|❌|
+|FDX|$216.13|[⏫ Buy](https://m.marketscreener.com/quote/stock/-12585/)|$289.49 (+33.9%)|❌|❌|
+|GOOGL|$2227.07|[⏫ Buy](https://m.marketscreener.com/quote/stock/-24203373/)|$3137.65 (+40.9%)|❌|❌|
+|INTC|$37.20|[⏸ Hold](https://m.marketscreener.com/quote/stock/-4829/)|$49.45 (+32.9%)|❌|❌|
+|MSFT|$253.67|[⏫ Buy](https://m.marketscreener.com/quote/stock/-4835/)|$352.90 (+39.1%)|❌|❌|
+|RBLX|$37.08|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-117793644/)|$40.84 (+10.1%)|❌|❌|
+|TPVG|$12.94|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-15933327/)|$16.68 (+28.9%)|❌|❌|
+|TSLA|$711.12|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-6344549/)|$892.45 (+25.5%)|❌|❌|
+|U|$32.82|[🔼 Outperform](https://m.marketscreener.com/quote/stock/-112492634/)|$64.73 (+97.2%)|❌|❌|
 
 
 *A from [MarketScreener](https://www.marketscreener.com), *B from [TipRanks](https://www.tipranks.com)
